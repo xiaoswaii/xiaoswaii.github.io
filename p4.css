@@ -5,13 +5,9 @@ img {
 }
 
 #container {
+    padding-top: 5%;
     margin: 0 auto;
     width: 200px;
-}
-
-#head {
-    text-align: center;
-    margin-right: -10px;
 }
 
 #introduction {
@@ -83,31 +79,26 @@ footer {
     margin-right: -10px;
 }
 
-#foot {
+#head {
     margin: 0 auto;
-    width: 100px;
+    width: 250px;
+    margin-bottom: 100px;
 }
 
 header {
     width: 100%;
     position: absolute;
     background-color: grey;
-    height: 10px;
+    height: 75px;
     margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -100px;
-    margin-bottom: 10px;
-}
-
-#head {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    background-color: grey;
+    margin-bottom: 150px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-top: -25px;
-    margin-bottom: 10px;
+}
+
+#foot {
+    margin: 0 auto;
+    width: 100px;
 }
 
 .fa {
@@ -159,7 +150,7 @@ header {
 }
 
 .button2 {
-    background-color: black;
+    background-color: chocolate;
     /* Green */
     border: none;
     color: white;
@@ -178,4 +169,26 @@ header {
 .button2:hover {
     background-color: grey;
     color: black;
+}
+
+.button3 {
+    background-color: aqua;
+    /* Green */
+    border: none;
+    color: darkgreen;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: firebrick;
+    color: palegreen;
 }
