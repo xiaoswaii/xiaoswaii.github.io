@@ -13,7 +13,8 @@
     <hr>
         <h1>套用bootstrap的resume</h1>    
     
-    <h1>Django Frameword 撰寫的 留言板</h1>   
+    
+   <h1>Django Frameword 撰寫的 留言板</h1>   
     <a href ="swaiidjango.herokuapp.com">Swaii Django</a>
 </body>
 
