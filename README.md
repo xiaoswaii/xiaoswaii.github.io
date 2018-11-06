@@ -9,7 +9,7 @@
    <h1>套用bootstrap的resume</h1>    
     
     
-   <h1>Django Frameword 撰寫的 留言板</h1>   
+   <h1>Django Framework 撰寫的 留言板</h1>   
     <a href ="https://swaiidjango.herokuapp.com">Swaii Django</a>
     
    <h1>CS+X課程助教的習題</h1>
