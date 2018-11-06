@@ -15,7 +15,7 @@
     
     
    <h1>Django Frameword 撰寫的 留言板</h1>   
-    <a href ="swaiidjango.herokuapp.com">Swaii Django</a>
+    <a href ="https://swaiidjango.herokuapp.com">Swaii Django</a>
 </body>
 
 </html>
