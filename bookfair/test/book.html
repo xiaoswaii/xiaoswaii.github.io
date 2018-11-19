@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <title>Document</title>
+</head>
+<script>
+    var order = new Array(1, 2, 3, 4);
+    var current = 0;
+    var choice = [];
+    $(document).ready(function() {
+        ShowPage(current);
+    });
+
+    function ShowPage(t) {
+        $("#page" + order[t]).show();
+
+    }
+
+    function getvalue(e) {
+        var a = ($(e).val());
+        $("#ans" + (current + 1)).val(a);
+    }
+
+    function calculate() {
+        $("#result").show();
+        if (choice[3] == "號令四方的武林盟主") {
+            console.log("fuck");
+            $("p").text("降龍十八掌")
+        } else if (choice[3] == "快意江湖的獨行俠客") {
+            console.log("fuck");
+            $("p").text("嫁衣神功")
+        } else if (choice[3] == "的武學宗師") {
+            console.log("fuck");
+            $("p").text("周流六虛功")
+        } else if (choice[3] == "不與世爭的逍遙散人") {
+            console.log("fuck");
+            $("p").text("凌波微步")
+        } else if (choice[3] == "胸懷天下的") {
+            console.log("fuck");
+            $("p").text("王道劍")
+        } else if (choice[3] == "鏟奸除惡的獨行俠客") {
+            console.log("fuck");
+            $("p").text("神劍訣")
+        } else if (choice[3] == "打遍天下的武學狂人") {
+            console.log("fuck");
+            $("p").text("獨孤九劍")
+        } else if (choice[3] == "孤高無暇的世外高人") {
+            console.log("fuck");
+            $("p").text("天外飛仙")
+        }
+
+    }
+
+    function handin() {
+        var b = $("#ans" + (current + 1)).val();
+        console.log(b);
+        choice.push(b);
+        if (current == 3) {
+            calculate();
+        }
+        if (b == "") {
+            alert("你還沒有選擇喔！");
+        } else {
+            $("#page" + order[current]).hide();
+            current = current + 1;
+            ShowPage(current);
+            console.log(current);
+        }
+
+    }
+</script>
+<style>
+    .page {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="page" id="page1">
+        <h1>你的性別是？</h1>
+        <input type="button" value="男性" onclick="getvalue(this)"><br>
+        <input type="button" value="女性" onclick="getvalue(this)"> <br>你選擇了：
+        <input type="text" id="ans1" value="" required>
+        <input type="submit" id="submit" value="submit" onclick="handin()">
+    </div>
+
+    <div class="page" id="page2">
+        <h1>Q1修練武功的目的</h1>
+        <input type="button" value="行俠仗義" onclick="getvalue(this)"><br>
+        <input type="button" value="超越自我，名震江湖" onclick="getvalue(this)"><br> 你選擇了：
+        <input type="text" id="ans2" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="handin()">
+    </div>
+    <div class="page" id="page3">
+        <h1>Q2遇到困難時，你的反應是?</h1>
+        <input type="button" value="迎難而上，努力克服" onclick="getvalue(this)"><br>
+        <input type="button" value="隨順而轉，分而化之" onclick="getvalue(this)"><br>
+        <input type="button" value="心平氣定" onclick="getvalue(this)"><br>
+        <input type="button" value="迎難而上，一往無悔" onclick="getvalue(this)"><br> 你選擇了：
+        <input type="text" id="ans3" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="handin()">
+    </div>
+
+    <div class="page" id="page4">
+        <h1>Q3在古代、身懷絕世武功，會想成為?</h1>
+        <input type="button" value="號令四方的武林盟主" onclick="getvalue(this)"><br>
+        <input type="button" value="快意江湖的獨行俠客" onclick="getvalue(this)"><br>
+        <input type="button" value="的武學宗師" onclick="getvalue(this)"><br>
+        <input type="button" value="不與世爭的逍遙散人" onclick="getvalue(this)"><br>
+        <input type="button" value="胸懷天下的" onclick="getvalue(this)"><br>
+        <input type="button" value="鏟奸除惡的獨行俠客" onclick="getvalue(this)"><br>
+        <input type="button" value="打遍天下的武學狂人" onclick="getvalue(this)"><br>
+        <input type="button" value="孤高無暇的世外高人" onclick="getvalue(this)">你選擇了：
+        <input type="text" id="ans4" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="handin()">
+    </div>
+    <div class="page" id="result">
+        <h1>草泥馬不適合學武功</h1>
+        <p></p>
+    </div>
+</body>
+
+</html>
