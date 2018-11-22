@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <script>
-    var order = new Array(1, 2, 3, 4);
+    var order = new Array(1, 2, 3, 4, 5, 6, 7, 8);
     var current = 0;
     var choice = [];
     $(document).ready(function() {
@@ -28,31 +28,54 @@
     }
 
     function calculate() {
+        $("#page" + order[current]).hide();
+        var fuxk = $("#ans" + (current + 1)).val();
+        console.log(fuxk);
+        choice.push(fuxk);
         $("#result").show();
-        if (choice[3] == "號令四方的武林盟主") {
-            console.log("fuck");
-            $("p").text("降龍十八掌")
+        if (choice[0] == "女性" && choice[3] == "濟危扶弱的武學宗師") {
+            $("h1").text("天山折梅手")
+            $("p").text("逍遙派高手天山童佬的絕學，虛竹曾賴以成名。天山折梅手共包括三路掌法，三路擒拿法，一共六路武功，天下任何招數武功，都能自行化在這『六路折梅手』之中 。涵蓋了劍法、刀法、鞭法、槍法、抓法、斧法等等諸般兵刃的絕招，變化繁複、深奧、精妙。這裡應該是指空手入白刃的功夫，不論對方用什麼兵刃，折梅手都能產生妙招，奪敵兵刃，最終戰胜對方。")
+        } else if (choice[0] == "女性" && choice[3] == "不與世爭的逍遙散人") {
+
+            $("h1").text("玉女劍法")
+            $("p").text("古墓派劍法,劍招精妙凌厲,劍式輕柔靈動,使用時身形清雅瀟灑,姿態飄飄若仙,帶著三分飄逸風姿,以韻姿佳妙取勝。招式勁急，綿密無間，不能有毫髮之差 ，劍招奇幻，變化莫測，似乎平平無奇，突然間幻招忽生，虛式層出，敵人難辨真假，極易受騙上當，待得發覺，已為對方所制。玉女劍法是全真劍法的剋星，一招一式，恰好把全真劍法的招式壓制得動彈不得，步步針鋒相對，招招制敵機先。 但若與全真劍法合璧，能變成玉女素心劍法，威力奇大。")
+        } else if (choice[0] == "女性" && choice[3] == "胸懷天下的江湖英雄") {
+
+            $("h1").text("明玉功")
+            $("p").text("是古龍小說《絕代雙驕》中移花宮的絕世武學，移花宮歷代宮主修煉的最高內家正宗絕頂心法。這種功夫共分九層，只要能使到第六層，已可與當代第一流高手一爭長短，若能使到第八層，就可無敵於天下。若練到九層極峰，運行時肌膚透明如玉，功力不往外揮發而是向內收斂，故而運功下不損耗內力還可以增加功力，並且體內的真氣會形成一股漩渦吸力，無論什麼東西觸及了她，都會如磁石吸鐵般被她吸過去。而且功力全力運行下，外表會越來越透明，看來就宛如被寒霧籠罩著的白冰，要是扣住他人穴道，真氣產生的可怕寒意會直透人之心底使其身體凝結成冰。不僅如此，神功玄妙之處，人也會越來越年輕靚麗，得以青春常駐。")
+        } else if (choice[3] == "號令四方的武林盟主") {
+
+            $("h1").text("降龍十八掌")
+            $("p").text("為極剛至陽之掌法，雖有少數柔招但主要仍以威猛力道稱雄江湖，掌勁天下無雙而有「古武降龍、天下無敵」的美譽，乃天下第一掌法。動作簡單無奇，但招招威力無窮，招式簡明而勁力精深，精要之處全在運勁發力，憑強猛取勝，每出一掌均有排山倒海之力。修練門檻不高是以連郭靖等天資平庸者也可經由苦練而大成，但後面幾招須內力深厚至一定程度方可習成，故百年來習齊十八掌者寥寥無幾。")
         } else if (choice[3] == "快意江湖的獨行俠客") {
-            console.log("fuck");
-            $("p").text("嫁衣神功")
-        } else if (choice[3] == "的武學宗師") {
-            console.log("fuck");
-            $("p").text("周流六虛功")
+
+            $("h1").text("嫁衣神功")
+            $("p").text("(嫁衣神功真氣屬於至剛至陽功夫練成後，真氣就會變得如火焰般猛烈，越挫越勇、遇強越強，自己非但不能運用，反而要日日夜夜受它的煎熬，那種痛苦實在非人所能忍受，所以只能將真氣內力轉嫁給他人。 這種功夫太過猛烈，所以練到六七成時，就要將練成的功夫全部毀去，然後，從頭再練。這叫【欲用其利，先挫其鋒】，【嫁衣神功】經此一挫，再練成後，其真氣鋒棱已被挫去，而威力【絲毫未減】，練的人等於將這種神功練過兩次，自然非常嫻熟，非但能將之發揮得【淋漓盡致】，而且【收發自如】。)")
+        } else if (choice[3] == "濟危扶弱的武學宗師") {
+
+            $("h1").text("周流六虛功")
+            $("p").text("為<昆崙>的主角梁蕭所創，是一門自生自長、自發自動，既可為人駕馭，亦可駕馭宿主，彌補人力之不足的武功。“周流六虛功”取法天道，以“損有餘補不足”為練功法門，出手以前，'周流八勁'損強補弱，不假外求。一旦受了對手的氣機牽引，受外力破壞，立刻形成反擊，而且遇強愈強，對手氣機越強，反擊之力也越厲害。是以，修煉'周流六虛功'以'諧'為要旨，以'不諧'為施展法門，一旦駕馭不當，又會八勁亂走，反噬其主。運用這門武功，不但要心細如發，把握一瞬之機；還得看破生死，孤注一擲。每次出手，均得將生於置之度外。")
         } else if (choice[3] == "不與世爭的逍遙散人") {
-            console.log("fuck");
-            $("p").text("凌波微步")
-        } else if (choice[3] == "胸懷天下的") {
-            console.log("fuck");
-            $("p").text("王道劍")
+
+            $("h1").text("凌波微步")
+            $("p").text("乃是一門極上乘的武功，每一步踏出，全身行動與內力息息相關，決非單是邁步行走而。它名出於曹植《洛神賦》—「休迅飛鳧，飄忽若神。凌波微步，羅襪生塵。動無常則，若危若安。進止難期，若往若還。轉眄流精，光潤玉顏。含辭未吐，氣若幽蘭。華容婀娜，令我忘餐。」原意是形容洛神體態輕盈，浮動於水波之上，緩緩行走。其中「休迅飛鳧，飄忽若神」及「動無常則，若危若安。進止難期，若往若還」可作為這種武功的註解。")
+        } else if (choice[3] == "胸懷天下的江湖英雄") {
+
+            $("h1").text("王道劍")
+            $("p").text("出自<王道劍>，王道需有強大的力量在背後支撐，主角以明教十大絕學為支撐；霸道的武學重在快與強勁之力，王道武學卻是生生不息，細水長流，可長可久，此盈則彼虧，有餘補不足")
         } else if (choice[3] == "鏟奸除惡的獨行俠客") {
-            console.log("fuck");
-            $("p").text("神劍訣")
+
+            $("h1").text("神劍訣")
+            $("p").text("由燕南天獨創的極剛武功，此劍法非但能在百萬軍中取主帥之首級，也能將一根頭髮分成兩根。江湖盛傳誰得了這劍譜，誰就可無敵於天下。天下劍法最強的燕南天一劍揮出，可以十丈外都能感覺出他的劍氣，也可以將別人鬍子頭髮都剃光，而卻一點也感覺不到。神劍訣無名驚天，一劍滅天凌塵可把石質之堅硬，天下無雙的青玉石巨椅劈斷成兩半。不過這無敵天下的劍譜裡面劍法奧妙是自平淡中見神奇，自紮實中見威力！需要精研劍法，好勇無畏之人方可達到神劍通明的至高境界。劍訣心法大成就可運劍而立如中流砥柱，穩如泰山磐石，鐵桶江山，滴水不漏；劍光飛起，劍勢綿綿不盡，看起來雖然平平實實，毫無花樣，但出劍奇快，劍光如雷霆閃電，劍勢奇猛，威力驚天動地。 燕南天劍法剛則縱橫開闔，剛強威猛，招式之強霸，天下無雙；柔則輕靈變化，當世無敵，陰陽互換，神劍無匹。此劍法出手之快，劍勢之強，環顧天下武林，已無一人能望其項背。一劍之威，睥睨天下！")
         } else if (choice[3] == "打遍天下的武學狂人") {
-            console.log("fuck");
-            $("p").text("獨孤九劍")
+
+            $("h1").text("獨孤九劍")
+            $("p").text("「劍魔」獨孤求敗所創，以無招勝有招，殺盡仇寇奸人，敗盡英雄豪傑，打遍天下無敵手。只攻不守獨孤九劍有進無退、 招招都是進攻， 攻敵之不得不守， 雖然只有九式劍法， 但是每一式卻包含無數種變化， 號稱破盡天下武功， 講求悟性， 若通曉了這九劍的劍意， 則無所施而不可， 無所不出， 無所不入， 便是將全部變化盡數忘記， 也不相干， 臨敵之際， 更是忘記得越乾淨徹底， 越不受原來劍法的拘束。 若能配合“ 無招勝有招” 的意境， 劍隨意動， 意在劍先， 隨心所欲， 那就更加的空靈飄忽， 令人無從捉摸。 獨孤九劍另一特點為料敵機先， 一眼見到對方招式中的破綻， 便即乘虛而入， 後發先至， 一招制勝， 實乃天下無雙的劍法。 ")
         } else if (choice[3] == "孤高無暇的世外高人") {
-            console.log("fuck");
-            $("p").text("天外飛仙")
+
+            $("h1").text("天外飛仙")
+            $("p").text("是「白雲城主」葉孤城所創劍法，如青天白雲無瑕無垢。此招居高而擊，一劍下擊之勢輝煌迅急，擁有連骨髓都冷透的劍氣，劍之鋒芒可怕到不能抵擋！一道劍光斜斜飛來，如驚芒掣電，如長虹經天。此隨心所欲的劍術變化，正是武功中至高無上的境界。人與劍似已合二為一 ，劍光如匹練如飛虹，直刺了過去，劍光輝煌而迅急，沒有變化，甚至連後著都沒有，將全身的功力都溶入這一劍中，沒有變化有時也正是最好的變化。 這一劍形成於招未出手之先，神留於招已出手之後，以至剛為至柔，以不變為變。 沒有人能形容這一劍的燦爛和輝煌，也沒有人能形容這一劍的速度，那已不僅是一柄劍，而是雷神的震怒，閃電的一擊。「月圓之夜，紫禁之巔，一劍西來，天外飛仙……」 「天外飛仙」無疑是古龍的武術系統中，有招這一層面上，最輝煌的頂峰，雖然囿於「有招」，然而它已經隱隱可以上達「無招」的天意。也是古龍少有下了重重的描寫的劍招——實在已經是天下無敵的劍招。")
         }
 
     }
@@ -61,68 +84,192 @@
         var b = $("#ans" + (current + 1)).val();
         console.log(b);
         choice.push(b);
-        if (current == 3) {
-            calculate();
-        }
-        if (b == "") {
-            alert("你還沒有選擇喔！");
-        } else {
+        if (choice.length == 2 && choice[1] == "行俠仗義") {
+            if (b == "") {
+                alert("你還沒有選擇喔！");
+            } else {
+                $("#page" + order[current]).hide();
+                current = current + 1;
+                ShowPage(current);
+                console.log(current);
+            }
+        } else if (choice.length == 2 && choice[1] == "超越自我，名震江湖") {
+            if (b == "") {
+                alert("你還沒有選擇喔！");
+            } else {
+                $("#page" + order[current]).hide();
+                current = current + 2;
+                ShowPage(current);
+                console.log(current);
+            }
+        } else if (choice.length == 3 && choice[2] == "迎難而上，努力克服") {
             $("#page" + order[current]).hide();
-            current = current + 1;
+            current = current + 2;
             ShowPage(current);
             console.log(current);
+        } else if (choice.length == 3 && choice[2] == "隨順而轉，分而化之") {
+            $("#page" + order[current]).hide();
+            current = current + 3;
+            ShowPage(current);
+            console.log(current);
+        } else if (choice.length == 3 && choice[2] == "心平氣定") {
+            $("#page" + order[current]).hide();
+            current = current + 3;
+            ShowPage(current);
+            console.log(current);
+        } else if (choice.length == 3 && choice[2] == "迎難而上，一往無悔") {
+            $("#page" + order[current]).hide();
+            current = current + 4;
+            ShowPage(current);
+            console.log(current);
+        } else if (choice.length <= 1) {
+            if (b == "") {
+                alert("你還沒有選擇喔！");
+            } else {
+                $("#page" + order[current]).hide();
+                current = current + 1;
+                ShowPage(current);
+                console.log(current);
+            }
         }
+
 
     }
 </script>
 <style>
+    h1 {
+        text-align: center;
+    }
+    
+    body {
+        background-color: bisque;
+    }
+    
     .page {
+        width: 500px;
+        height: 770px;
         display: none;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    input[type=button] {
+        border-color: black;
+        border-radius: 15px;
+        font-size: 20px;
+        margin-left: 120px;
+        padding: 30px;
+        width: 240px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+    
+    input[type=button]:hover {
+        height: 25px;
+        background-color: black;
+        color: white;
+    }
+    
+    input[type=text] {
+        height: 20px;
+        border-radius: 15px;
+    }
+    
+    input[type=submit] {
+        padding: 20px;
+        height: 50px;
+        border-radius: 15px;
+    }
+    
+    span {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    #choice {
+        margin-left: 90px;
+    }
+    
+    img {
+        display: block;
+        height: 200px;
+        width: 500px;
     }
 </style>
 
 <body>
+    <div class="head">
+        <img src="./1.jpg">
+    </div>
     <div class="page" id="page1">
         <h1>你的性別是？</h1>
         <input type="button" value="男性" onclick="getvalue(this)"><br>
-        <input type="button" value="女性" onclick="getvalue(this)"> <br>你選擇了：
+        <input type="button" value="女性" onclick="getvalue(this)"> <br><span id="choice">你選擇了:
         <input type="text" id="ans1" value="" required>
-        <input type="submit" id="submit" value="submit" onclick="handin()">
+        <input type="submit" id="submit" value="提交" onclick="handin()"></span>
     </div>
 
     <div class="page" id="page2">
         <h1>Q1修練武功的目的</h1>
         <input type="button" value="行俠仗義" onclick="getvalue(this)"><br>
-        <input type="button" value="超越自我，名震江湖" onclick="getvalue(this)"><br> 你選擇了：
+        <input type="button" value="超越自我，名震江湖" onclick="getvalue(this)"><br> <span id="choice">你選擇了:
         <input type="text" id="ans2" value="" required>
-        <input type="submit" id="submit" value="提交" onclick="handin()">
+        <input type="submit" id="submit" value="提交" onclick="handin()"></span>
     </div>
     <div class="page" id="page3">
         <h1>Q2遇到困難時，你的反應是?</h1>
         <input type="button" value="迎難而上，努力克服" onclick="getvalue(this)"><br>
         <input type="button" value="隨順而轉，分而化之" onclick="getvalue(this)"><br>
-        <input type="button" value="心平氣定" onclick="getvalue(this)"><br>
-        <input type="button" value="迎難而上，一往無悔" onclick="getvalue(this)"><br> 你選擇了：
+        <span id="choice">你選擇了:
         <input type="text" id="ans3" value="" required>
-        <input type="submit" id="submit" value="提交" onclick="handin()">
+        <input type="submit" id="submit" value="提交" onclick="handin()"></span>
+    </div>
+    <div class="page" id="page4">
+        <h1>Q2遇到困難時，你的反應是?</h1>
+        <input type="button" value="心平氣定" onclick="getvalue(this)"><br>
+        <input type="button" value="迎難而上，一往無悔" onclick="getvalue(this)"><br> <span id="choice">你選擇了:
+        <input type="text" id="ans4" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="handin()"></span>
     </div>
 
-    <div class="page" id="page4">
+    <div class="page" id="page5">
         <h1>Q3在古代、身懷絕世武功，會想成為?</h1>
         <input type="button" value="號令四方的武林盟主" onclick="getvalue(this)"><br>
         <input type="button" value="快意江湖的獨行俠客" onclick="getvalue(this)"><br>
-        <input type="button" value="的武學宗師" onclick="getvalue(this)"><br>
+        <span id="choice">你選擇了:
+        <input type="text" id="ans5" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="calculate()"></span>
+    </div>
+    <div class="page" id="page6">
+        <h1>Q3在古代、身懷絕世武功，會想成為?</h1>
+        <input type="button" value="濟危扶弱的武學宗師" onclick="getvalue(this)"><br>
         <input type="button" value="不與世爭的逍遙散人" onclick="getvalue(this)"><br>
-        <input type="button" value="胸懷天下的" onclick="getvalue(this)"><br>
+        <span id="choice">你選擇了:
+        <input type="text" id="ans6" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="calculate()"></span>
+    </div>
+    <div class="page" id="page7">
+        <h1>Q3在古代、身懷絕世武功，會想成為?</h1>
+        <input type="button" value="胸懷天下的江湖英雄" onclick="getvalue(this)"><br>
         <input type="button" value="鏟奸除惡的獨行俠客" onclick="getvalue(this)"><br>
+        <span id="choice">你選擇了:
+        <input type="text" id="ans7" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="calculate()"></span>
+    </div>
+    <div class="page" id="page8">
+        <h1>Q3在古代、身懷絕世武功，會想成為?</h1>
         <input type="button" value="打遍天下的武學狂人" onclick="getvalue(this)"><br>
-        <input type="button" value="孤高無暇的世外高人" onclick="getvalue(this)">你選擇了：
-        <input type="text" id="ans4" value="" required>
-        <input type="submit" id="submit" value="提交" onclick="handin()">
+        <input type="button" value="孤高無暇的世外高人" onclick="getvalue(this)"><br><span id="choice">你選擇了:
+        <input type="text" id="ans8" value="" required>
+        <input type="submit" id="submit" value="提交" onclick="calculate()"></span>
     </div>
     <div class="page" id="result">
-        <h1>草泥馬不適合學武功</h1>
-        <p></p>
+        <span>您適合學的武功：</span>
+        </br>
+        <h1></h1>
+        <p>
+        </p><br>
+        <a href="http://homepage.ntu.edu.tw/~b05106028">重新測驗</a>
     </div>
 </body>
 
