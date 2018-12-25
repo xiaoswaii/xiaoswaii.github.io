@@ -1,0 +1,70 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+}
+
+img {
+    height: 140px;
+    width: 140px;
+    box-shadow: 6px 6px 13px 6px #187ace;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+#namecard {
+    width: 800px;
+    height: 300px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+#right {
+    margin-left: 180px;
+    position: absolute;
+}
+
+#namecard h2 {
+    color: #ff5722;
+    letter-spacing: 5px;
+}
+
+#namecard h2 span {
+    margin-left: 20px;
+}
+
+#namecard h3 {
+    font-weight: 300;
+}
+
+#namecard p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+a {
+    margin-top: 10px;
+    display: block;
+    width: 30%;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: black;
+}
