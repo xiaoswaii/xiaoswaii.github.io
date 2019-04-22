@@ -1,3 +1,5 @@
+https://img.shields.io/github/repo-size/xiaoswaii/xiaoswaii.github.io.svg
+
 <!DOCTYPE html>
 <html lang="en">
 
