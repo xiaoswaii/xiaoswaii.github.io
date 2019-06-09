@@ -9,12 +9,17 @@ button{
 font-family: "Press Start 2P";
 }
 
+
 .nes-field{
     width: 50%;
     margin: 0 auto;
 }
 
 .container1{
+    display: none;
+}
+
+.container2{
     display: none;
 }
 
