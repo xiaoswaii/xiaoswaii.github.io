@@ -1,0 +1,41 @@
+html, 
+body, 
+pre, 
+code, 
+kbd, 
+samp,
+div,
+button{
+font-family: "Press Start 2P";
+}
+
+.nes-field{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container1{
+    display: none;
+}
+
+#pplBody{
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+#pplBodyBuy{
+    height: 500px;
+    position:absolute;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#cloth{
+    height: 500px;
+    position:absolute;
+    display: block;
+    margin: 0 auto;
+    z-index: 2;
+}
