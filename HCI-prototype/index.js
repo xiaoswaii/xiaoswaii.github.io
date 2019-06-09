@@ -62,24 +62,69 @@ $('#modeBuy').on('click',function(){
 
 $('#wearBuy').on('click',function(){
     var size = $('#size').val();
-    if(size == 's'){
+    var body = $('#pplBodyBuy').attr('src',);
+    if(body == './body/normal.png'){
+        if(size == 's'){
         $('#cloth').attr('src','./body/shirt.png')
         $('#cloth').css('height','200px')
         $('#cloth').css('margin-left','70px')
         $('#cloth').css('margin-top','34px')
-    }
-    else if(size == 'm'){
+        }
+        else if(size == 'm'){
         $('#cloth').attr('src','./body/shirt.png')
         $('#cloth').css('height','220px')
         $('#cloth').css('margin-left','65px')
         $('#cloth').css('margin-top','34px')
-    }
-    else if(size == 'l'){
+        }
+        else if(size == 'l'){
         $('#cloth').attr('src','./body/shirt.png')
         $('#cloth').css('height','240px')
         $('#cloth').css('margin-left','60px')
         $('#cloth').css('margin-top','34px')
+        }
     }
+    if(body == './body/fat.png'){
+        if(size == 's'){
+        $('#cloth').attr('src','./body/shirt.png')
+        $('#cloth').css('height','200px')
+        $('#cloth').css('margin-left','70px')
+        $('#cloth').css('margin-top','50px')
+        }
+        else if(size == 'm'){
+        $('#cloth').attr('src','./body/shirt.png')
+        $('#cloth').css('height','220px')
+        $('#cloth').css('margin-left','65px')
+        $('#cloth').css('margin-top','50px')
+        }
+        else if(size == 'l'){
+        $('#cloth').attr('src','./body/shirt.png')
+        $('#cloth').css('height','240px')
+        $('#cloth').css('margin-left','52px')
+        $('#cloth').css('margin-top','46px')
+        }
+    }
+    if(body == './body/thin.png'){
+        if(size == 's'){
+        $('#cloth').attr('src','./body/shirt.png')
+        $('#cloth').css('height','200px')
+        $('#cloth').css('margin-left','70px')
+        $('#cloth').css('margin-top','50px')
+        }
+        else if(size == 'm'){
+        $('#cloth').attr('src','./body/shirt.png')
+        $('#cloth').css('height','220px')
+        $('#cloth').css('margin-left','65px')
+        $('#cloth').css('margin-top','50px')
+        }
+        else if(size == 'l'){
+        $('#cloth').attr('src','./body/shirt.png')
+        $('#cloth').css('height','240px')
+        $('#cloth').css('margin-left','52px')
+        $('#cloth').css('margin-top','46px')
+        }
+    }
+    
+    console.log(body)
 })
 
 $('#modeDorm').on('click',function(){
