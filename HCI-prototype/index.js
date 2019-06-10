@@ -143,7 +143,7 @@ $('#modeDisplay').on('click',function(){
         var array=data.all
         var header = `<h2 id="MyWardrobe">我的衣櫃</h2><br>`
         $('#pplBody').after(header);
-        var myArray = {"casual": "休閒", "school": "學校", "formal": "正式"};
+        var myArray = {"casual": "休閒", "school": "學校", "formal": "正式","sport": "運動"};
         for(var i = 0;i<array.length;i++){
             var key =(array[i].type)
             console.log(key)

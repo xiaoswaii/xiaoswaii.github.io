@@ -17,12 +17,12 @@
     {
         "type":"school",
         "url":"./cloth/school1.png",
-        "weather":"hot"
+        "weather":"cold"
     },
     {
         "type":"school",
         "url":"./cloth/school2.png",
-        "weather":"hot"
+        "weather":"cold"
     },
     {
         "type":"formal",
@@ -47,6 +47,36 @@
     {
         "type":"casual",
         "url":"./cloth/casualwinter4.png",
+        "weather":"cold"
+    },
+    {
+        "type":"casual",
+        "url":"./cloth/casual5.png",
+        "weather":"hot"
+    },
+    {
+        "type":"school",
+        "url":"./cloth/schoolsummer1.png",
+        "weather":"hot"
+    },
+    {
+        "type":"school",
+        "url":"./cloth/schoolsummer2.png",
+        "weather":"hot"
+    },
+    {
+        "type":"sport",
+        "url":"./cloth/sport1.png",
+        "weather":"hot"
+    },
+    {
+        "type":"sport",
+        "url":"./cloth/sportwinter.png",
+        "weather":"cold"
+    },
+    {
+        "type":"casual",
+        "url":"./cloth/casual6.png",
         "weather":"cold"
     }
     ]
