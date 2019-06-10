@@ -141,7 +141,7 @@ $('#modeDisplay').on('click',function(){
         $.getJSON( "./cloth.json", function( data ) {
         console.log(data.all)
         var array=data.all
-        var header = `<h2>我的衣櫃</h2><br>`
+        var header = `<h2 id="MyWardrobe">我的衣櫃</h2><br>`
         $('#pplBody').after(header);
         var myArray = {"casual": "休閒", "school": "學校", "formal": "正式"};
         for(var i = 0;i<array.length;i++){
@@ -155,6 +155,7 @@ $('#modeDisplay').on('click',function(){
     }
     else{
         $('#product-list').empty();
+        $('#MyWardrobe').remove();
     }
     
 })
