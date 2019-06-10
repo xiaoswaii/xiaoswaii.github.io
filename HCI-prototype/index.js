@@ -134,3 +134,27 @@ $('#modeDorm').on('click',function(){
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
+
+$('#modeDisplay').on('click',function(){
+    var check = $('#product-list').html();
+    if(!check){
+        $.getJSON( "./cloth.json", function( data ) {
+        console.log(data.all)
+        var array=data.all
+        var header = `<h2>我的衣櫃</h2><br>`
+        $('#pplBody').after(header);
+        var myArray = {"casual": "休閒", "school": "學校", "formal": "正式"};
+        for(var i = 0;i<array.length;i++){
+            var key =(array[i].type)
+            console.log(key)
+            console.log(myArray[key])
+            var li = `<div class="col-*"><div class="item"><img src="${array[i].url}" class="image"><h3 class="name">風格：${myArray[key]}</h3></div></div>`;
+            $('#product-list').append(li);
+        }
+        })
+    }
+    else{
+        $('#product-list').empty();
+    }
+    
+})
